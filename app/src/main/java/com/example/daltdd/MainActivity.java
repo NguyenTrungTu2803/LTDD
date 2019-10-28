@@ -1,7 +1,9 @@
 package com.example.daltdd;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.WindowDecorActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -56,5 +58,9 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction  = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fram_main, frame );
         fragmentTransaction.commit();
+    }
+    void actionbar()
+    {
+
     }
 }

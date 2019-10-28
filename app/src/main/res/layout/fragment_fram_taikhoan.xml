@@ -10,7 +10,7 @@
     <FrameLayout
         android:id="@+id/fram_1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="70dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -22,11 +22,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="@string/fram1" />
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/fram1" />
 
         <ImageView
             android:id="@+id/image1"
@@ -48,33 +48,33 @@
         android:id="@+id/fram_2"
         android:layout_marginTop="60dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="40dp">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/baseline_lock_black_24dp" />
 
         <TextView
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="@string/fram2" />
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/fram2" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="50dp"
             android:src="@drawable/baseline_assistant_black_24dp" />
 
 
         <ImageView
             android:layout_width="420dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
             android:src="@drawable/line" />
 
@@ -82,242 +82,240 @@
 
     <FrameLayout
         android:id="@+id/fram_3"
-        android:layout_marginTop="130dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/baseline_lock_black_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram3" />
+            android:layout_marginTop="0dp"
+            android:text="@string/fram3" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/baseline_card_giftcard_black_24dp" />
-
-
         <ImageView
-            android:layout_width="420dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/line" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/fram_4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp">
+        android:layout_height="30dp"
+        android:layout_marginTop="130dp">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/baseline_lock_black_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram4" />
+            android:layout_marginTop="5dp"
+            android:text="@string/fram4" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/baseline_room_black_24dp" />
 
 
         <ImageView
-            android:layout_width="420dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/line" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/fram_5"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="270dp">
+        android:layout_height="30dp"
+        android:layout_marginTop="160dp">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/baseline_lock_black_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram5" />
+            android:layout_marginTop="0dp"
+            android:text="@string/fram5" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/baseline_credit_card_black_24dp" />
 
 
         <ImageView
             android:layout_width="420dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/line" />
     </FrameLayout>
+
     <FrameLayout
         android:id="@+id/fram_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="340dp">
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="185dp">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/baseline_lock_black_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram6" />
+            android:layout_marginTop="5dp"
+            android:text="@string/fram6" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/baseline_comment_black_24dp" />
 
 
         <ImageView
-            android:layout_width="420dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="22dp"
             android:src="@drawable/line" />
     </FrameLayout>
+
     <FrameLayout
         android:id="@+id/fram_7"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="410dp">
+        android:layout_height="30dp"
+        android:layout_marginTop="215dp">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="-5dp"
             android:src="@drawable/baseline_navigate_next_black_18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram7" />
+            android:text="@string/fram7" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
             android:src="@drawable/baseline_settings_applications_black_24dp" />
 
 
         <ImageView
-            android:layout_width="420dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/line" />
     </FrameLayout>
+
     <FrameLayout
         android:id="@+id/fram_8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="480dp">
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="240dp">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="-5dp"
             android:src="@drawable/baseline_navigate_next_black_18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram8" />
+            android:layout_marginTop="5dp"
+            android:text="@string/fram8" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/baseline_contact_support_black_24dp" />
 
 
         <ImageView
-            android:layout_width="420dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/line" />
     </FrameLayout>
+
     <FrameLayout
         android:id="@+id/fram_9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="550dp">
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="270dp">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="380dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="-5dp"
             android:src="@drawable/baseline_navigate_next_black_18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="25dp"
-            tools:text="@string/fram9" />
+            android:text="@string/fram9" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="25dp"
-            android:textColor="@color/design_default_color_primary_dark"
-            tools:text="@string/hotline" />
+            android:text="@string/hotline"
+            android:textColor="@color/design_default_color_primary_dark" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
             android:src="@drawable/baseline_settings_phone_black_24dp" />
 
     </FrameLayout>
