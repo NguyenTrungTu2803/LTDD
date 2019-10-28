@@ -24,6 +24,4 @@
         app:itemIconTint="@color/nav_itemcolor"
         app:itemTextColor="@color/nav_itemcolor"
         app:menu="@menu/nav_item"></com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
 </RelativeLayout>
