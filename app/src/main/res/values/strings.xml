@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">DoAnLTDD</string>
+    <string name="app_name">DALTDD</string>
+    <string name="nav_timve">Tìm vé</string>
+    <string name="nav_vecuatoi">Vé của tôi</string>
+    <string name="nav_taikhoan">Tài khoản</string>
+    <string name="fram1">Trở thành thành viên để nhận nhiều ưu đãi</string>
+    <string name="fram2">Điễm tích lũy</string>
+    <string name="fram3">Ưu đãi</string>
+    <string name="fram4">Địa điểm đã lưu</string>
+    <string name="fram5">Quản lý thẻ</string>
+    <string name="fram6">Nhận xét của tôi</string>
+    <string name="fram7">Cài đặt</string>
+    <string name="fram8">Hỗ trợ</string>
+    <string name="fram9">Holine :</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.doanltdd;
+package com.example.daltdd;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.doanltdd", appContext.getPackageName());
+        assertEquals("com.example.daltdd", appContext.getPackageName());
     }
 }
