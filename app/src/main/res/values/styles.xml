@@ -7,5 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="App" parent="Theme.AppCompat.Light" >
+        <!-- Customize your theme here. -->
+        <item name="colorButtonNormal">@color/colorBlu</item>
+    </style>
 </resources>
