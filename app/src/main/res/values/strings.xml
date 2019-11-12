@@ -15,4 +15,39 @@
     <string name="hotline">1900 1000</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ngonngu">Ngôn ngữ</string>
+    <string name="tv">Tiếng Việt</string>
+    <string name="ta">Tiếng Anh</string>
+    <string name="phienban">Phiên bản</string>
+    <string name="dndk">Đăng nhập / Đăng ký</string>
+    <string name="sdt">Số điện thoại</string>
+    <string name="back">Quay lại</string>
+    <string name="thdn">Tiến hành đăng nhập</string>
+    <string name="nsdt">Nhập số di động</string>
+    <string name="thongtin">Chúng tôi sử dụng Account Kit, một công nghệ của Facebook, để đăng nhập cho bạn. Bạn không cần có tài khoản Facebook. Có thể áp dụng cước phí và dùng dữ liệu.</string>
+    <string name="whatapp">Nhập mã qua WhatApp</string>
+    <string name="sms">Sử dụng SMS</string>
+    <string name="masms">Nhập mã của bạn</string>
+    <string name="next">Tiếp tục</string>
+    <string name="keyerror">Tôi không nhận được mã</string>
+    <string name="thongtinma">Nhấn vào tiếp tục để chấp nhận điều khoản. chính sách dữ liệu, sử dụng cookie của Facebook và chính sách quyền riêng tư của những điều khoản dịch vụ của chúng tôi</string>
+    <string name="yourname">Tên bạn là gì?</string>
+    <string name="name">Họ tên</string>
+    <string name="ttdatve">Thông tin của bạn sẽ dùng để đặt vé qua ứng dụng và giúp chùng tôi phục vụ bạn tốt hơn</string>
+    <string name="email">Còn Email của bạn?</string>
+    <string name="ttemail">Chúng tôi sẽ gửi thông tin đặt vé, hành trình, thanh toán, thông báo bảo mật và thông tin khuyến mãi đến địa chỉ Email của bạn.</string>
+    <string name="email2">Email</string>
+    <string name="yourpass">Đặt mật khẩu cho bạn?</string>
+    <string name="an">Ẩn</string>
+    <string name="hien">HIỆN</string>
+    <string name="pass">Mật khẩu</string>
+
+    <!-- TODO:DN -->
+    <string name="loisdt">Số điện thoại không đúng</string>
+    <string name="loisend">Có gì đó không ổn, chúng tôi sẽ sớm sửa nó ...</string>
+    <string name="makhl">Mã không hợp lệ</string>
+
+
+
+
 </resources>

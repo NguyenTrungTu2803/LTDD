@@ -7,21 +7,28 @@
     tools:context=".MainActivity">
     <FrameLayout
         android:id="@+id/fram_main"
-        android:layout_above="@id/main_nav"
+        android:layout_above="@id/dt"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </FrameLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/main_nav"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@color/nav_itemcolor"
-        app:itemTextColor="@color/nav_itemcolor"
-        app:menu="@menu/nav_item"></com.google.android.material.bottomnavigation.BottomNavigationView>
-</RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/dt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/main_nav"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@color/nav_itemcolor"
+            app:itemTextColor="@color/nav_itemcolor"
+            app:menu="@menu/nav_item">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+
+    </RelativeLayout>

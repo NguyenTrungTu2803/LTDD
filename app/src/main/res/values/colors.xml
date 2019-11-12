@@ -6,4 +6,9 @@
     <color name="colorwhite">#ffffff</color>
     <color name="colorwhitestrantion">#80ffffff</color>
     <color name="colorBlu">#6040DF</color>
+    <color name="colorBlustran">#9640DF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorLightCyan">#e0ffff</color>
+    <color name="colorLightBlu">#736aff</color>
 </resources>

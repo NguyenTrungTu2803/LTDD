@@ -3,15 +3,19 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.daltdd">
 
-    <dist:module dist:instant="true" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/roung"
         android:label=""
         android:supportsRtl="true"
         android:theme="@style/App">
-        <activity android:name=".DKDN"></activity>
+        <activity android:name=".step5_DN"></activity>
+        <activity android:name=".step4_DN" />
+        <activity android:name=".step3_DN" />
+        <activity android:name=".sep2_dn" />
+        <activity android:name=".DN"></activity>
+        <activity android:name=".ngon_ngu" />
+        <activity android:name=".DKDN" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+
 
 </manifest>

@@ -1,9 +1,9 @@
 package com.example.daltdd;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.WindowDecorActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         clickbottom();
         actionbar();
     }
+
     void clickbottom()
     {
         setFrameLayout(fram_timve);

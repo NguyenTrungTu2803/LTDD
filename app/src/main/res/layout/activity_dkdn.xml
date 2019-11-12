@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DKDN">
+    <LinearLayout
+        android:id="@+id/liddndk"
+        android:layout_width="match_parent"
+        android:background="@color/colorBlu"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/backdndk"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_keyboard_backspace_white_48dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lid"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/liddndk"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="30dp"
+            android:text="@string/dndk"
+            android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/sdt"
+            android:layout_width="341dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorwhite"
+            android:drawableLeft="@drawable/leftright"
+            android:drawableTop="@drawable/solid"
+            android:drawableRight="@drawable/leftright"
+            android:drawableBottom="@drawable/solid"
+            android:hint="@string/sdt"
+            android:textColorHint="@color/colorBlustran" />
+        <Button
+            android:id="@+id/gg"
+            android:layout_width="341dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorRed"
+            android:hint="Google"
+            android:textColorHint="@color/colorwhite" />
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="341dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorBlu"
+            android:hint="Facebook"
+            android:textColorHint="@color/colorwhite" />
+    </LinearLayout>
+
+</RelativeLayout>
