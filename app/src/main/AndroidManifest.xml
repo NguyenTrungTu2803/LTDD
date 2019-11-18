@@ -13,7 +13,6 @@
         <activity android:name=".step4_DN" />
         <activity android:name=".step3_DN" />
         <activity android:name=".sep2_dn" />
-        <activity android:name=".DN"></activity>
         <activity android:name=".ngon_ngu" />
         <activity android:name=".DKDN" />
         <activity android:name=".MainActivity">

@@ -40,7 +40,7 @@ public class DKDN extends Activity {
         btnsdt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(DKDN.this, DN.class);
+                Intent intent= new Intent(DKDN.this, sep2_dn.class);
                 startActivity(intent);
             }
         });
