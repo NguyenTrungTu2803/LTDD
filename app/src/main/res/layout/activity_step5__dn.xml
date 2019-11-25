@@ -53,21 +53,33 @@
                     android:layout_margin="30dp"
                     android:layout_height="wrap_content"/>
             <TextView
+                android:id="@+id/hidepass"
                 android:layout_width="wrap_content"
                 android:text="@string/hien"
-                android:textStyle="bold"
                 android:textSize="20dp"
                 android:textColor="@color/colorwhite"
                 android:layout_marginTop="40dp"
                 android:layout_marginLeft="230dp"
+                android:textAllCaps="false"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
         <EditText
+            android:id="@+id/editpass"
             android:layout_marginLeft="30dp"
             android:inputType="textPassword"
+            android:textColor="@color/colorwhite"
             android:layout_marginTop="-20dp"
             android:drawableBottom="@drawable/solidbuttom"
             android:layout_width="341dp"
             android:layout_height="40dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/colorLightBlu"
+            android:src="@drawable/ic_check_black_24dp"
+            app:fabSize="normal"/>
     </LinearLayout>
 </RelativeLayout>

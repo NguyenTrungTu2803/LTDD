@@ -1,7 +1,6 @@
 package com.example.daltdd;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -11,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 public class fram_taikhoan extends Fragment implements View.OnClickListener {
@@ -18,7 +19,9 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
     private FrameLayout fram1,fram2, fram3, fram4, fram5, fram6, fram7, fram8, fram9;
     private fram_taikhoan fram_taikhoan;
     private FrameLayout frameLayout;
+    private LinearLayout lithongtin;
     private View view;
+    private TextView viewtk, nametk;
     public fram_taikhoan() {
     }
 
@@ -34,6 +37,7 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         Intent intent = new Intent(getActivity(), DKDN.class);
         Intent caidat = new Intent(getActivity(), ngon_ngu.class);
+
         switch (v.getId()) {
             case R.id.fram_1:
                 startActivity(intent);
@@ -69,6 +73,9 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
         fram7 = view.findViewById(R.id.fram_7);
         fram8 = view.findViewById(R.id.fram_8);
         fram9 = view.findViewById(R.id.fram_9);
+        lithongtin = view.findViewById(R.id.thongtin);
+        viewtk = view.findViewById(R.id.textViewtaikhoan);
+        nametk = view.findViewById(R.id.manetaikhoan);
         fram1.setOnClickListener(this);
         fram3.setOnClickListener(this);
         fram4.setOnClickListener(this);
@@ -77,6 +84,15 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
         fram7.setOnClickListener(this);
         fram8.setOnClickListener(this);
         fram2.setOnClickListener(this);
+    }
+    public  void visibility(){
+        if(nametk.getText()!= "") {
+            lithongtin.setVisibility(View.VISIBLE);
+            viewtk.setVisibility(View.INVISIBLE);
+        }else{
+            lithongtin.setVisibility(View.INVISIBLE);
+            viewtk.setVisibility(View.VISIBLE);
+        }
     }
 
 }

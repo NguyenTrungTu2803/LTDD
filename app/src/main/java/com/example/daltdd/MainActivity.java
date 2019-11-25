@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private FrameLayout frameLayout, fram1,fram2, fram3, fram4, fram5, fram6, fram7, fram8, fram9;
-    private  fram_taikhoan fram_taikhoan = new fram_taikhoan();
+    public  fram_taikhoan fram_taikhoan = new fram_taikhoan();
     private fram_timve fram_timve = new fram_timve();
     private  fram_vecuatoi fram_vecuatoi = new fram_vecuatoi();
 
@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.main_nav);
-        frameLayout = (FrameLayout) findViewById(R.id.fram_main);
+        bottomNavigationView = findViewById(R.id.main_nav);
+        frameLayout = findViewById(R.id.fram_main);
         clickbottom();
         actionbar();
     }
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    void setFrameLayout(Fragment frame){
+    public void setFrameLayout(Fragment frame){
         FragmentTransaction fragmentTransaction  = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fram_main, frame );
         fragmentTransaction.commit();

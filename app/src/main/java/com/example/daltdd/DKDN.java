@@ -45,20 +45,6 @@ public class DKDN extends Activity {
             }
         });
     }
-    /*private void printKeyHash(){
-        try{
-            PackageInfo packageInfo = getPackageManager().
-                    getPackageInfo("com.example.daltdd", PackageManager.GET_SIGNATURES);
-            for (Signature signature : packageInfo.signatures){
-                MessageDigest md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                Log.d("KEYHASH", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-            }
-        }catch (PackageManager.NameNotFoundException e){
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-    }*/
+
 
 }

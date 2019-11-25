@@ -39,15 +39,23 @@
     <string name="email2">Email</string>
     <string name="yourpass">Đặt mật khẩu cho bạn?</string>
     <string name="an">Ẩn</string>
-    <string name="hien">HIỆN</string>
+    <string name="hien">Hiện</string>
     <string name="pass">Mật khẩu</string>
 
     <!-- TODO:DN -->
     <string name="loisdt">Số điện thoại không đúng</string>
     <string name="loisend">Có gì đó không ổn, chúng tôi sẽ sớm sửa nó ...</string>
     <string name="makhl">Mã không hợp lệ</string>
-
-
+    <string name="saiten">Tên nhập không đúng</string>
+    <string name="hide">Ẩn</string>
+    <string name="show">Hiện</string>
+    <string name="emaildk">Email không hợp lệ</string>
+    <string name="mkyeu">Mật khẩu yếu</string>
+    <string name="yes">Đồng ý</string>
+    <string name="No">Từ chối</string>
+    <string name="yesfalse">Thông tin đăng nhập chưa hợp lệ</string>
+    <string name="insertacount">Tạo tài khoản thành công</string>
+    <string name="thaydoitt">Thay đổi thông tin</string>
 
 
 </resources>
