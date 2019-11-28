@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.daltdd.class_DN.class_NguoiDung;
+import com.example.daltdd.class_arraylist.LayThongTinND;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
@@ -28,13 +29,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyPhoneActivity extends Activity {
 
-
+    class_NguoiDung nguoiDung = new class_NguoiDung();
+    LayThongTinND layThongTinND = new LayThongTinND();
     private DatabaseReference reference;
 
     private String verificationId;
@@ -43,10 +43,8 @@ public class VerifyPhoneActivity extends Activity {
     private EditText editText;
     private TextView textView;
     private String phonenumber;
-    private TextView viewtk;
+    final fram_taikhoan fram_taikhoan = new fram_taikhoan();
     private int k = 0;
-
-    private ArrayList<String> msdt = new ArrayList<String>();
 
     private PhoneAuthProvider.ForceResendingToken mtoken;
 
@@ -55,13 +53,12 @@ public class VerifyPhoneActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_phone);
 
+
         mAuth = FirebaseAuth.getInstance();
         reference = FirebaseDatabase.getInstance().getReference();
 
         progressBar = findViewById(R.id.progressbar);
         editText = findViewById(R.id.editTextCode);
-        viewtk = findViewById(R.id.manetaikhoan);
-
         textView = findViewById(R.id.quaylai);
 
         phonenumber = getIntent().getStringExtra("phonenumber");
@@ -111,6 +108,7 @@ public class VerifyPhoneActivity extends Activity {
                                 startActivity(intent);
                             }else {
                                 Intent intent= new Intent(VerifyPhoneActivity.this, MainActivity.class);
+                                intent.putExtra("ten", layThongTinND.mTen);
                                 startActivity(intent);
                             }
 
@@ -159,13 +157,14 @@ public class VerifyPhoneActivity extends Activity {
         reference.child("Acount").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                class_NguoiDung nguoiDung = new class_NguoiDung();
+
                 nguoiDung = dataSnapshot.getValue(class_NguoiDung.class);
-                msdt.add(nguoiDung.sdt);
-                boolean kt = msdt.contains(phonenumber);
+                layThongTinND.msdt = nguoiDung.sdt;
+                boolean kt = layThongTinND.msdt.contains(phonenumber);
                 if(kt) {
                     k = 1;
-                    Toast.makeText(VerifyPhoneActivity.this, nguoiDung.ten, Toast.LENGTH_LONG).show();
+                    fram_taikhoan.fillTextview(nguoiDung.ten);
+                    Toast.makeText(VerifyPhoneActivity.this, layThongTinND.mTen, Toast.LENGTH_LONG).show();
                 }
             }
             @Override

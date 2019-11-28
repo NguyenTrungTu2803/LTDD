@@ -12,6 +12,9 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.daltdd.class_arraylist.LayThongTinND;
 
 
 public class fram_taikhoan extends Fragment implements View.OnClickListener {
@@ -21,16 +24,15 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
     private FrameLayout frameLayout;
     private LinearLayout lithongtin;
     private View view;
-    private TextView viewtk, nametk;
+    public TextView viewtk, nametk;
     public fram_taikhoan() {
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_fram_taikhoan, container, false);
         findviewbyid();
+        visibility();
         return  view;
     }
     @Override
@@ -85,14 +87,21 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
         fram8.setOnClickListener(this);
         fram2.setOnClickListener(this);
     }
+
     public  void visibility(){
+        LayThongTinND layThongTinND = new LayThongTinND();
+        Toast.makeText(getActivity(), layThongTinND.mTen, Toast.LENGTH_LONG).show();
         if(nametk.getText()!= null) {
             lithongtin.setVisibility(View.VISIBLE);
             viewtk.setVisibility(View.INVISIBLE);
+
         }else{
             lithongtin.setVisibility(View.INVISIBLE);
             viewtk.setVisibility(View.VISIBLE);
         }
+    }
+    public void fillTextview(String text){
+        nametk.setText(text);
     }
 
 }
