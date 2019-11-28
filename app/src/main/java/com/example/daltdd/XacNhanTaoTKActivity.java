@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.daltdd.class_DN.class_NguoiDung;
@@ -16,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class XacNhanTaoTKActivity extends Activity {
 
     private String  sdt, ten, email, pass;
-
+    private TextView nameaccount;
     private DatabaseReference reference;
     private Button btnyes, btnno;
     @Override
@@ -44,6 +45,7 @@ public class XacNhanTaoTKActivity extends Activity {
     void AnhXa(){
         btnno = findViewById(R.id.btn_tuchoi); btnyes= findViewById(R.id.btn_dongy);
         Intent intent = getIntent();
+        nameaccount = findViewById(R.id.manetaikhoan);
         email = intent.getStringExtra("email");
         sdt = intent.getStringExtra("sdt");
         ten =getIntent().getStringExtra("name");
@@ -54,6 +56,9 @@ public class XacNhanTaoTKActivity extends Activity {
             class_NguoiDung nguoiDung = new class_NguoiDung(sdt, pass, email, pass);
             reference.child("Acount").push().setValue(nguoiDung);
             Toast.makeText(this, getString(R.string.insertacount),Toast.LENGTH_LONG).show();
+            //nameaccount.setText(ten);
+            Intent intent = new Intent(XacNhanTaoTKActivity.this, MainActivity.class);
+            startActivity(intent);
         }
        else {
             Toast.makeText(this, getString(R.string.yesfalse), Toast.LENGTH_LONG).show();

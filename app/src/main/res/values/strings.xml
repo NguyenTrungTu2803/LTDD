@@ -56,6 +56,11 @@
     <string name="yesfalse">Thông tin đăng nhập chưa hợp lệ</string>
     <string name="insertacount">Tạo tài khoản thành công</string>
     <string name="thaydoitt">Thay đổi thông tin</string>
+    <string name="timvexere">Tìm vé xe rẻ</string>
+    <string name="today">Hôm ngay</string>
+    <string name="ngaymai">Ngày mai</string>
+    <string name="nhapnoidi">Nhập nơi đi</string>
+    <string name="nhapnoiden">Nhập nơi đến</string>
 
 
 </resources>

@@ -72,4 +72,11 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayUseLogoEnabled(true);
 
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //setFrameLayout(fram_taikhoan);
+    }
+
 }

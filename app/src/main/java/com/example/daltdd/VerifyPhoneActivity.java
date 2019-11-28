@@ -34,6 +34,7 @@ import java.util.concurrent.TimeUnit;
 
 public class VerifyPhoneActivity extends Activity {
 
+
     private DatabaseReference reference;
 
     private String verificationId;
@@ -61,11 +62,11 @@ public class VerifyPhoneActivity extends Activity {
         editText = findViewById(R.id.editTextCode);
         viewtk = findViewById(R.id.manetaikhoan);
 
+        textView = findViewById(R.id.quaylai);
+
         phonenumber = getIntent().getStringExtra("phonenumber");
         sendVerificationCode(phonenumber);
 
-
-        KTTrung();
         findViewById(R.id.buttonSignIn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +84,7 @@ public class VerifyPhoneActivity extends Activity {
                 }
             }
         });
-        textView = findViewById(R.id.quaylai);
+        KTTrung();
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,7 +111,6 @@ public class VerifyPhoneActivity extends Activity {
                                 startActivity(intent);
                             }else {
                                 Intent intent= new Intent(VerifyPhoneActivity.this, MainActivity.class);
-
                                 startActivity(intent);
                             }
 
@@ -142,7 +142,6 @@ public class VerifyPhoneActivity extends Activity {
             verificationId = s;
             mtoken = forceResendingToken;
         }
-
         @Override
         public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
             String code = phoneAuthCredential.getSmsCode();
@@ -151,7 +150,6 @@ public class VerifyPhoneActivity extends Activity {
                 verifyCode(code);
             }
         }
-
         @Override
         public void onVerificationFailed(FirebaseException e) {
             Toast.makeText(VerifyPhoneActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
@@ -167,24 +165,21 @@ public class VerifyPhoneActivity extends Activity {
                 boolean kt = msdt.contains(phonenumber);
                 if(kt) {
                     k = 1;
-                    viewtk.setText(nguoiDung.ten);
+                    Toast.makeText(VerifyPhoneActivity.this, nguoiDung.ten, Toast.LENGTH_LONG).show();
                 }
             }
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
 
             }
-
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
 
             }
-
             @Override
             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
 
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 

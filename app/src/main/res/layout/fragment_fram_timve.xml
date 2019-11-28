@@ -1,9 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorBlu"
     android:layout_height="match_parent"
     tools:context=".fram_timve">
+    <RelativeLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/white">
 
+        <EditText
+            android:id="@+id/txt_noidi"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/nhapnoidi"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
 
-</FrameLayout>
+        <ImageButton
+            android:id="@+id/btn_chuyendiem_diden"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp" />
+
+        <EditText
+            android:id="@+id/txt_noiden"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/nhapnoiden"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/li1"
+        android:id="@+id/li2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <CalendarView
+            android:id="@+id/cal_li2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp" />
+
+        <Button
+            android:id="@+id/btn_homnay"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="119dp"
+            android:background="@android:color/white"
+            android:text="@string/today"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15dp"
+            tools:ignore="InvalidId" />
+
+        <Button
+            android:id="@+id/btn_ngaymai"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:text="@string/ngaymai"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15dp"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+    <Button
+        android:layout_below="@id/li2"
+        android:id="@+id/btn_timvere"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFAB00"
+        android:text="@string/timvexere"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+    <CalendarView
+        android:id="@+id/cal_bottom"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_timvere"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

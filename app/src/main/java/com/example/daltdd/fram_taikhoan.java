@@ -86,7 +86,7 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
         fram2.setOnClickListener(this);
     }
     public  void visibility(){
-        if(nametk.getText()!= "") {
+        if(nametk.getText()!= null) {
             lithongtin.setVisibility(View.VISIBLE);
             viewtk.setVisibility(View.INVISIBLE);
         }else{
