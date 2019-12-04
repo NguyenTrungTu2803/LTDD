@@ -3,9 +3,6 @@ package com.example.daltdd;
 
 
 
-import com.example.daltdd.class_DN.class_NguoiDung;
-import com.google.firebase.auth.FirebaseAuth;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

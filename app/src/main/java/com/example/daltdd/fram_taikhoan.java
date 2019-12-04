@@ -24,6 +24,7 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
     private FrameLayout frameLayout;
     private LinearLayout lithongtin;
     private View view;
+    private String sk;
     public TextView viewtk, nametk;
     public fram_taikhoan() {
     }
@@ -32,7 +33,8 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_fram_taikhoan, container, false);
         findviewbyid();
-        visibility();
+        //sk = this.getArguments().getString("s");
+        //visibility();
         return  view;
     }
     @Override
@@ -91,6 +93,7 @@ public class fram_taikhoan extends Fragment implements View.OnClickListener {
     public  void visibility(){
         LayThongTinND layThongTinND = new LayThongTinND();
         Toast.makeText(getActivity(), layThongTinND.mTen, Toast.LENGTH_LONG).show();
+        //nametk.setText(sk);
         if(nametk.getText()!= null) {
             lithongtin.setVisibility(View.VISIBLE);
             viewtk.setVisibility(View.INVISIBLE);

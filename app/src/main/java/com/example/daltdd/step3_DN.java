@@ -1,6 +1,5 @@
 package com.example.daltdd;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +9,6 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.example.daltdd.class_DN.class_NguoiDung;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class step3_DN extends Activity {

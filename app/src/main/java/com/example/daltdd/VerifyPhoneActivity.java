@@ -11,8 +11,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
-import com.example.daltdd.class_DN.class_NguoiDung;
+import com.example.daltdd.class_Firebaes.class_NguoiDung;
 import com.example.daltdd.class_arraylist.LayThongTinND;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -31,7 +34,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
-public class VerifyPhoneActivity extends Activity {
+public class VerifyPhoneActivity extends AppCompatActivity {
 
     class_NguoiDung nguoiDung = new class_NguoiDung();
     LayThongTinND layThongTinND = new LayThongTinND();
@@ -43,7 +46,6 @@ public class VerifyPhoneActivity extends Activity {
     private EditText editText;
     private TextView textView;
     private String phonenumber;
-    final fram_taikhoan fram_taikhoan = new fram_taikhoan();
     private int k = 0;
 
     private PhoneAuthProvider.ForceResendingToken mtoken;
@@ -163,7 +165,14 @@ public class VerifyPhoneActivity extends Activity {
                 boolean kt = layThongTinND.msdt.contains(phonenumber);
                 if(kt) {
                     k = 1;
-                    fram_taikhoan.fillTextview(nguoiDung.ten);
+                    //FragmentTransaction fragmentTransaction  = getSupportFragmentManager().beginTransaction();
+                    //Bundle bundle = new Bundle();
+                   // String sk = nguoiDung.ten;
+                   // bundle.putString("s", sk);
+                    //fram_taikhoan fag = new fram_taikhoan();
+                   // fag.setArguments(bundle);
+                   // fragmentTransaction.replace(R.id.fram_main, fag);
+                   // fragmentTransaction.commit();
                     Toast.makeText(VerifyPhoneActivity.this, layThongTinND.mTen, Toast.LENGTH_LONG).show();
                 }
             }

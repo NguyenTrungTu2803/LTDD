@@ -1,11 +1,8 @@
-package com.example.daltdd.class_DN;
+package com.example.daltdd.class_Firebaes;
 
 public class class_NguoiDung {
-
-
     public String sdt, ten, email, matkhau;
     public class_NguoiDung(){
-
     }
     public  class_NguoiDung(String sdt, String ten, String email, String matkhau){
         this.sdt = sdt;

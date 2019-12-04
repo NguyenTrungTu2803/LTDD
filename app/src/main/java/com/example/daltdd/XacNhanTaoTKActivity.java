@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.daltdd.class_DN.class_NguoiDung;
+import com.example.daltdd.class_Firebaes.class_NguoiDung;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,7 +30,7 @@ public class XacNhanTaoTKActivity extends Activity {
         btnno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(XacNhanTaoTKActivity.this, DKDN.class);
+                Intent intent = new Intent(XacNhanTaoTKActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -57,6 +57,7 @@ public class XacNhanTaoTKActivity extends Activity {
             reference.child("Acount").push().setValue(nguoiDung);
             Toast.makeText(this, getString(R.string.insertacount),Toast.LENGTH_LONG).show();
             //nameaccount.setText(ten);
+
             Intent intent = new Intent(XacNhanTaoTKActivity.this, MainActivity.class);
             startActivity(intent);
         }

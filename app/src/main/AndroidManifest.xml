@@ -5,22 +5,27 @@
 
     <dist:module dist:instant="true" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/roung"
         android:label=""
         android:supportsRtl="true"
         android:theme="@style/App">
-        <activity android:name=".XacNhanTaoTKActivity"/>
-        <activity android:name=".step5_DN"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+        <activity android:name=".thongtintimve">
+
+        </activity>
+        <activity android:name=".class_searchplace.search_go_come"/>
+        <activity android:name=".XacNhanTaoTKActivity" />
+        <activity android:name=".step5_DN" />
         <activity android:name=".step4_DN" />
-        <activity android:name=".VerifyPhoneActivity"></activity>
-        <activity android:name=".step3_DN" >
-
-        </activity>
-        <activity android:name=".sep2_dn" >
-
-        </activity>
+        <activity android:name=".VerifyPhoneActivity" />
+        <activity android:name=".step3_DN" />
+        <activity android:name=".sep2_dn" />
         <activity android:name=".ngon_ngu" />
         <activity android:name=".DKDN" />
         <activity android:name=".MainActivity">
@@ -30,9 +35,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-
 </manifest>
