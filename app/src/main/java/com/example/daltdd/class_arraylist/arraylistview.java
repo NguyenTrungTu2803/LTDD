@@ -59,7 +59,7 @@ public class arraylistview extends BaseAdapter {
         ngay.setText(dsThongTinXe.getNgay());
         soghe.setText("Gường nằm " + dsThongTinXe.getSoGhe()+" chỗ");
         tenxe.setText(dsThongTinXe.getTeXe());
-        benxe.setText(dsThongTinXe.getBenXe());
+        benxe.setText("Bến xe : " + dsThongTinXe.getBenXe());
 
         return convertView;
     }

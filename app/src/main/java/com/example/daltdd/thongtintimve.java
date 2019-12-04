@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -60,7 +61,6 @@ public class thongtintimve extends Activity {
         tenxe = findViewById(R.id.tenxe);
         benxe = findViewById(R.id.benxe);
         lv = findViewById(R.id.listview);
-        dsThongTinXe = new DSThongTinXe();
         ds = new ArrayList<DSThongTinXe>();
 
     }
@@ -70,7 +70,21 @@ public class thongtintimve extends Activity {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 //dsThongTinXe = dataSnapshot.getValue(DSThongTinXe.class);
                 //dsThongTinXe = new DSThongTinXe(dsThongTinXe.TeXe,dsThongTinXe.Gia,dsThongTinXe.SoGhe,dsThongTinXe.BenXe,dsThongTinXe.Ngay,dsThongTinXe.Gio);
+                 dsThongTinXe = new DSThongTinXe();
+                dsThongTinXe.BenXe = dataSnapshot.child("BenXe").getValue().toString();
+                    dsThongTinXe.Ngay = dataSnapshot.child("Ngay").getValue().toString();
+                    dsThongTinXe.Gio = dataSnapshot.child("Gio").getValue().toString();
+                    dsThongTinXe.Gia = dataSnapshot.child("Gia").getValue().toString();
+                    dsThongTinXe.SoGhe = dataSnapshot.child("SoGhe").getValue().toString();
+                    dsThongTinXe.TeXe = dataSnapshot.child("TenXe").getValue().toString();
+                    ds.add(dsThongTinXe);
+                arraylv = new arraylistview(thongtintimve.this, ds);
+                lv.setAdapter(arraylv);
+                arraylv.notifyDataSetChanged();
 
+            }
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 dsThongTinXe.BenXe = dataSnapshot.child("BenXe").getValue().toString();
                 dsThongTinXe.Ngay = dataSnapshot.child("Ngay").getValue().toString();
                 dsThongTinXe.Gio = dataSnapshot.child("Gio").getValue().toString();
@@ -81,16 +95,7 @@ public class thongtintimve extends Activity {
                 arraylv = new arraylistview(thongtintimve.this, ds);
                 lv.setAdapter(arraylv);
                 arraylv.notifyDataSetChanged();
-                Toast.makeText(thongtintimve.this, dsThongTinXe.Gio, Toast.LENGTH_LONG).show();
 
-            }
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                //dsThongTinXe = dataSnapshot.getValue(DSThongTinXe.class);
-                //ds.add(dataSnapshot.getValue().toString());
-                //arraylv = new arraylistview(thongtintimve.this, ds);
-                lv.setAdapter(arraylv);
-                Toast.makeText(thongtintimve.this, "fsdfsd", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
@@ -102,6 +107,14 @@ public class thongtintimve extends Activity {
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+    public void onclickLV(){
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             }
         });
