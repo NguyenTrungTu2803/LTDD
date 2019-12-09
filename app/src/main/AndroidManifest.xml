@@ -13,6 +13,7 @@
         android:label=""
         android:supportsRtl="true"
         android:theme="@style/App">
+        <activity android:name=".ChonDiaDiem"></activity>
         <activity android:name=".chon_cho_ngoi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +25,8 @@
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />
-        <activity android:name=".thongtintimve"></activity>
+
+        <activity android:name=".thongtintimve" />
         <activity android:name=".class_searchplace.search_go_come" />
         <activity android:name=".XacNhanTaoTKActivity" />
         <activity android:name=".step5_DN" />
@@ -34,9 +36,7 @@
         <activity android:name=".sep2_dn" />
         <activity android:name=".ngon_ngu" />
         <activity android:name=".DKDN" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

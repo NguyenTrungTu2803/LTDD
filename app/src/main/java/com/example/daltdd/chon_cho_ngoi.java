@@ -178,16 +178,17 @@ public class chon_cho_ngoi extends Activity {
                         if( dataSnapshot.child(key).getValue().toString().equals("0")){
                             im.setBackground(getDrawable(R.drawable.baseline_single_bed_1_48dp));
                             reference.getRef().child(key).setValue("1");
-                            li4.setVisibility(View.VISIBLE); chonghe.setText("Số ghế : ");
-                            if(tong > 0) {
+                            li4.setVisibility(View.VISIBLE);
+                            if(tong >= 0) {
                                 tong -= Integer.parseInt(dataSnapshot.child("Gia").getValue().toString());
-                                tongtien.setText("Tổng tiền : " + tong);
 
+                                tongtien.setText("Tổng tiền : " + tong);
+                                if(tong == 0)
+                                    btn_chon.setVisibility(View.INVISIBLE);
                             }
-                            else if(tong == 0)
-                                btn_chon.setVisibility(View.INVISIBLE);
                             else
                                 tong = 0;
+                            laysoghe = "";
                         }else if(dataSnapshot.child(key).getValue().toString().equals("2")){
 
                         }
