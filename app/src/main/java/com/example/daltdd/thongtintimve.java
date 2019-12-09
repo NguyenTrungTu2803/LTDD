@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -42,6 +43,7 @@ public class thongtintimve extends Activity {
         setContentView(R.layout.activity_thongtintimve);
         AnhXa();
         Loadthongtinxe();
+        onclickLV();
         imbac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,9 +70,7 @@ public class thongtintimve extends Activity {
         reference.child("PhuongTrang").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                //dsThongTinXe = dataSnapshot.getValue(DSThongTinXe.class);
-                //dsThongTinXe = new DSThongTinXe(dsThongTinXe.TeXe,dsThongTinXe.Gia,dsThongTinXe.SoGhe,dsThongTinXe.BenXe,dsThongTinXe.Ngay,dsThongTinXe.Gio);
-                 dsThongTinXe = new DSThongTinXe();
+                dsThongTinXe = new DSThongTinXe();
                 dsThongTinXe.BenXe = dataSnapshot.child("BenXe").getValue().toString();
                     dsThongTinXe.Ngay = dataSnapshot.child("Ngay").getValue().toString();
                     dsThongTinXe.Gio = dataSnapshot.child("Gio").getValue().toString();
@@ -85,6 +85,7 @@ public class thongtintimve extends Activity {
             }
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                dsThongTinXe = new DSThongTinXe();
                 dsThongTinXe.BenXe = dataSnapshot.child("BenXe").getValue().toString();
                 dsThongTinXe.Ngay = dataSnapshot.child("Ngay").getValue().toString();
                 dsThongTinXe.Gio = dataSnapshot.child("Gio").getValue().toString();
@@ -115,7 +116,9 @@ public class thongtintimve extends Activity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Toast.makeText(thongtintimve.this, position+ "eeee", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(thongtintimve.this, chon_cho_ngoi.class);
+                startActivity(intent);
             }
         });
     }

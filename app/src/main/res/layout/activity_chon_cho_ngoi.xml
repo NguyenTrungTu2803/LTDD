@@ -27,19 +27,462 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/li2"
+        android:layout_marginTop="5dp"
         android:layout_below="@id/li1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/baseline_crop_square_black_18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Trống"
+                android:layout_height="wrap_content"/>
 
-    </RelativeLayout>
-    <RelativeLayout
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/baseline_crop_square_2_18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Ghế đã bán"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/baseline_crop_square_1_18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Đang chọn"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
         android:id="@+id/li3"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
         android:layout_below="@id/li2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView5"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Tầng 1" />
 
-    </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@id/textView5"
+                android:id="@+id/lighe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/c1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe1"
+                android:id="@+id/lighe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/c3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe2"
+                android:id="@+id/lighe3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/b5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe3"
+                android:id="@+id/lighe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                   />
+
+                <ImageButton
+                    android:id="@+id/b7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/c7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe4"
+                android:id="@+id/lighe5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe5"
+                android:id="@+id/lighe6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a11"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b11"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c11"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView6"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Tầng 2" />
+            <LinearLayout
+                android:layout_below="@id/textView6"
+                android:id="@+id/lighe7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe7"
+                android:id="@+id/lighe8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/c4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe8"
+                android:id="@+id/lighe9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe9"
+                android:id="@+id/lighe10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/c8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe10"
+                android:id="@+id/lighe11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/b10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe11"
+                android:id="@+id/lighe12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/a12"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/b12"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/c12"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lighe12"
+                android:id="@+id/lighe13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/d1"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/d2"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/d3"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/d4"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                     />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:id="@+id/li4"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/li3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtsoghe"
+            android:text="Số ghế : "
+            android:textColor="@color/colorBlack"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txttonggia"
+            android:text="Tổng giá: "
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/li4"
+        android:id="@+id/btn_chon"
+        android:textSize="25dp"
+        android:textColor="@color/colorLightCyan"
+        android:text="Chọn địa điểm đi và đến"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
 
 </RelativeLayout>

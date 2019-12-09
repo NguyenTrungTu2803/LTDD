@@ -13,12 +13,17 @@
         android:label=""
         android:supportsRtl="true"
         android:theme="@style/App">
-        <activity android:name=".chon_cho_ngoi"></activity>
+        <activity android:name=".chon_cho_ngoi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />
-
         <activity android:name=".thongtintimve"></activity>
         <activity android:name=".class_searchplace.search_go_come" />
         <activity android:name=".XacNhanTaoTKActivity" />
@@ -30,11 +35,7 @@
         <activity android:name=".ngon_ngu" />
         <activity android:name=".DKDN" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
