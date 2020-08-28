@@ -13,13 +13,13 @@
         android:label=""
         android:supportsRtl="true"
         android:theme="@style/App">
-        <activity android:name=".ChonDiaDiem"></activity>
-        <activity android:name=".chon_cho_ngoi">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".ThongTinKhach">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".ChonDiaDiem"></activity>
+
+        <activity android:name=".chon_cho_ngoi">
+
         </activity>
 
         <meta-data
@@ -36,7 +36,13 @@
         <activity android:name=".sep2_dn" />
         <activity android:name=".ngon_ngu" />
         <activity android:name=".DKDN" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

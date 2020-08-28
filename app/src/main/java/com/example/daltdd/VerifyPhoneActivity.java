@@ -34,7 +34,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
-public class VerifyPhoneActivity extends AppCompatActivity {
+public class VerifyPhoneActivity extends Activity {
 
     class_NguoiDung nguoiDung = new class_NguoiDung();
     LayThongTinND layThongTinND = new LayThongTinND();

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -37,6 +38,7 @@ public class chon_cho_ngoi extends Activity {
     private ImageButton d1, d2, d3, d4;
     private SoGhe soGhe = new SoGhe();
     private DatabaseReference reference;
+    private DatabaseReference capnhat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +46,11 @@ public class chon_cho_ngoi extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_chon_cho_ngoi);
         reference = FirebaseDatabase.getInstance().getReference("SoGhe40");
+        capnhat = FirebaseDatabase.getInstance().getReference();
         AnhXa();
         EventChangeFirebaes();
         AnhXaClick();
+        btn_chon();
 
     }
     void AnhXa(){
@@ -102,7 +106,7 @@ public class chon_cho_ngoi extends Activity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                setbackgound(dataSnapshot.child("b1").getValue().toString(), b1);
+               // setbackgound(dataSnapshot.child("b1").getValue().toString(), b1);
 
                 setbackgound(dataSnapshot.child("a1").getValue().toString(), a1);
                 setbackgound(dataSnapshot.child("a2").getValue().toString(), a2);
@@ -196,7 +200,7 @@ public class chon_cho_ngoi extends Activity {
                             im.setBackground(getDrawable(R.drawable.baseline_single_bed_black_48dp));
                            tong += Integer.parseInt(dataSnapshot.child("Gia").getValue().toString());
                             reference.getRef().child(key).setValue("0");
-                            laysoghe += key;
+                            laysoghe += key ;
                             tongtien.setText("Tổng tiền : " + tong);
                             li4.setVisibility(View.VISIBLE); chonghe.setText("Số ghế : " + laysoghe);btn_chon.setVisibility(View.VISIBLE);
                         }
@@ -252,6 +256,22 @@ public class chon_cho_ngoi extends Activity {
         ImageButtonClick("d3", d3);
         ImageButtonClick("d4", d4);
 
+    }
+    public void btn_chon(){
+        btn_chon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(chon_cho_ngoi.this, ChonDiaDiem.class);
+                intent.putExtra("tongtien", tong);
+                intent.putExtra("ghechon", laysoghe);
+                capnhat.child(laysoghe).push();
+                capnhat.child(laysoghe).child("GheDaDat").setValue(laysoghe);
+                capnhat.child(laysoghe).child("TongTien").setValue(tong);
+                capnhat.child(laysoghe).child("DiaChiDon").setValue(tong);
+                capnhat.child(laysoghe).child("DiaChiTra").setValue(tong);
+                startActivity(intent);
+            }
+        });
     }
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.diadiemtra">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RadioButton
+        android:id="@+id/rad1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1_1"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:text="Bến Xe Quảng Ngãi"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv1_2"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:text="02 Trần Khánh Dư"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_room_black_24dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+</RadioGroup>
+</FrameLayout>

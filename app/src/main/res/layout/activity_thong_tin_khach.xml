@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongTinKhach">
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:background="@color/colorBlu"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/backdndk"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_keyboard_backspace_white_48dp" />
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/colorwhite"
+            android:text="Thông tin khách"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@id/li1"
+        android:id="@+id/li2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:drawableLeft="@drawable/baseline_account_circle_white_24dp2"
+            android:id="@+id/edithoten"
+            android:inputType="text"
+            android:hint="Nhập họ và tên"
+            android:textColor="@color/colorBlack"
+            android:drawableBottom="@drawable/solidbuttom"
+            android:layout_width="341dp"
+            android:layout_height="60dp"/>
+        <EditText
+            android:drawableLeft="@drawable/baseline_settings_phone_black_24dp"
+            android:id="@+id/editsdt"
+            android:hint="Nhập số điện thoại"
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:drawableBottom="@drawable/solidbuttom"
+            android:layout_width="341dp"
+            android:layout_height="60dp"/>
+        <EditText
+            android:drawableLeft="@drawable/baseline_email_white_18dp"
+            android:id="@+id/ediemail"
+            android:hint=" Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorBlack"
+            android:drawableBottom="@drawable/solidbuttom"
+            android:layout_width="341dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/tvxentt"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBlu"
+            android:text="Xem thông tin vé"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_xacnhan"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Xác nhận"
+            android:background="@color/colorLightCyan"
+            android:textColor="@color/colorBlack"
+            android:layout_width="250dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/li2"
+        android:id="@+id/li3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tongtien"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="Tổng tiền : "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/dddon"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="Địa điểm đón : "
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tenghe"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:text="Số ghế: "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/ddtra"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:text="Địa điểm trả: "
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
